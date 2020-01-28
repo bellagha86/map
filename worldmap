@@ -21,7 +21,7 @@
             fillColor: '#fff',
             fillOpacity: 1
         }
-        $.getJSON(myGeoJSONPath,function(data){
+        $.getJSON(custom.geo.json,function(data){
             var map = L.map('map').setView([39.74739, -105], 4);
 
             L.geoJson(data, {
